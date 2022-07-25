@@ -380,6 +380,8 @@ class _KartKatman extends StatelessWidget {
                 controller: pageController,
                 itemCount: kartlar.length,
                 itemBuilder: (context, index1) {
+                  print("index = $index1  / toplam ${kartlar.length}");
+
                   return ListView.builder(
                       itemCount: kartlar[index1].length,
                       physics: const NeverScrollableScrollPhysics(),
